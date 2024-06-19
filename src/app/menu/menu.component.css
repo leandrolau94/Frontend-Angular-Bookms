@@ -1,0 +1,44 @@
+#menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    padding: 1rem;
+    width: 80%;
+    height: 80vh;
+    margin: 10vh 10%;
+    box-sizing: border-box;
+    list-style-type: none;
+    justify-self: start;
+    align-self: start;
+    border: none;
+}
+
+.menu-li-a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 200px;
+    background-color: #5276af;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.menu-li-a:hover {
+    background-color: #5276afbe;
+    box-shadow: 0 0 10px 3px #636e80;
+}
+
+@media only screen and (max-width:890px) {
+    #menu {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    #menu {
+        grid-template-columns: auto;
+    }
+}

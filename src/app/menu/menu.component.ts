@@ -13,7 +13,7 @@ export class MenuComponent {
   menuList: Menuli[] = [
     {
       label: "Añadir Libro",
-      route: "/books",
+      route: "/add",
     },
     {
       label: "Eliminar Libro",

@@ -1,0 +1,27 @@
+<form (ngSubmit)="postBook()">
+    <fieldset>
+        <legend>Añade los datos del libro</legend>
+        <div class="form-control">
+            <label for="book-isbn">ISBN:</label>
+            <input id="book-isbn" name="isbn" [(ngModel)]="newBook.isbn" placeholder="{{ newBook.isbn }}">
+        </div>
+        <div class="form-control">
+            <label for="book-title">Titulo:</label>
+            <input id="book-title" name="title" [(ngModel)]="newBook.title" placeholder="{{ newBook.title }}">
+        </div>
+        <div class="form-control">
+            <label for="book-pages">Numero de Paginas:</label>
+            <input id="book-pages" name="numPages" [(ngModel)]="newBook.numPages" placeholder="{{ newBook.numPages }}">
+        </div>
+        <div class="form-control">
+            <label for="book-author">Autor:</label>
+            <input id="book-author" name="author" [(ngModel)]="newBook.author" placeholder="{{ newBook.author }}">
+        </div>
+        <div class="form-control">
+            <label for="book-imgUrl">Url Portada:</label>
+            <input id="book-imgUrl" name="imgUrl" [(ngModel)]="newBook.imgUrl" placeholder="{{ newBook.imgUrl }}">
+        </div>
+    </fieldset>
+    
+    <button type="submit">Añadir</button>
+</form>

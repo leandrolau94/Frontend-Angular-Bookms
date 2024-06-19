@@ -1,5 +1,5 @@
 <ul id="menu">
-    <a *ngFor="let item of menuList" class="menu-li-a" href="{{ item.route }}">
+    <a *ngFor="let item of menuList" class="menu-li-a" routerLink="{{ item.route }}">
         {{ item.label }}
     </a>
 </ul>

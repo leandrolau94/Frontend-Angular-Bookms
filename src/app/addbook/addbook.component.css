@@ -1,0 +1,41 @@
+form {
+    display: block;
+    float: left;
+    width: 80%;
+    margin: 10vh 5%;
+    background-color: #274d80;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+input, label {
+    width: 80%;
+    margin: 0 10%;
+}
+
+label {
+    color: #ffffff;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 40%;
+    margin: 0 30%;
+    height: 40px;
+    background-color: #7e4db6;
+    color: #ffffff;
+    border: none;
+}
+
+button:hover {
+    background-color: #9359d4;
+    cursor: pointer;
+}

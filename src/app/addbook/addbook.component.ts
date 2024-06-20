@@ -21,14 +21,14 @@ export class AddbookComponent {
   
   constructor(private router: Router){};
 
-  postBook(): any {
-    // await axios.post("http://localhost:8080/books", this.newBook)
-    // .then(res => {
-    //   console.log(res);
-    // })
-    // .catch(err => {
-    //   console.log(err);
-    // });
+  async postBook(): Promise<any> {
+    await axios.post("http://localhost:8080/books", this.newBook)
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    });
     console.log(this.newBook);
     return this.router.navigate(['/', 'menu']);
   };
